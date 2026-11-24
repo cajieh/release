@@ -19,9 +19,10 @@ tests:
       ASSERTION_PASS_RATE: "0.8"
       AWS_INSTALL_USE_MINIMAL_PERMISSIONS: "yes"
       EVAL_CONFIG: evals/core-eval-testing/builtin-gpt-latest/eval-core.yaml
-      EVAL_LABEL_SELECTOR: ""
+      EVAL_LABEL_SELECTOR: suite=core
       EVAL_SUITE: core
       TASK_PASS_RATE: "0.8"
+      TOOLSETS: core
     test:
     - chain: openshift-mcp-server-mcpchecker-eval-model-api
     workflow: ipi-aws
@@ -33,9 +34,10 @@ tests:
       ASSERTION_PASS_RATE: "0.8"
       AWS_INSTALL_USE_MINIMAL_PERMISSIONS: "yes"
       EVAL_CONFIG: evals/core-eval-testing/builtin-gpt-previous/eval-core.yaml
-      EVAL_LABEL_SELECTOR: ""
+      EVAL_LABEL_SELECTOR: suite=core
       EVAL_SUITE: core
       TASK_PASS_RATE: "0.8"
+      TOOLSETS: core
     test:
     - chain: openshift-mcp-server-mcpchecker-eval-model-api
     workflow: ipi-aws
@@ -48,12 +50,13 @@ tests:
       ASSERTION_PASS_RATE: "0.8"
       AWS_INSTALL_USE_MINIMAL_PERMISSIONS: "yes"
       EVAL_CONFIG: evals/core-eval-testing/builtin-claude-sonnet-latest/eval-core.yaml
-      EVAL_LABEL_SELECTOR: ""
+      EVAL_LABEL_SELECTOR: suite=core
       EVAL_SUITE: core
       GEMINI_USE_VERTEX: ""
-      GOOGLE_CLOUD_LOCATION: us-east5
+      GOOGLE_CLOUD_LOCATION: global
       GOOGLE_CLOUD_PROJECT: ocp-mcp-server-team
       TASK_PASS_RATE: "0.8"
+      TOOLSETS: core
     test:
     - chain: openshift-mcp-server-mcpchecker-eval-vertex
     workflow: ipi-aws
@@ -66,12 +69,13 @@ tests:
       ASSERTION_PASS_RATE: "0.8"
       AWS_INSTALL_USE_MINIMAL_PERMISSIONS: "yes"
       EVAL_CONFIG: evals/core-eval-testing/builtin-claude-sonnet-previous/eval-core.yaml
-      EVAL_LABEL_SELECTOR: ""
+      EVAL_LABEL_SELECTOR: suite=core
       EVAL_SUITE: core
       GEMINI_USE_VERTEX: ""
       GOOGLE_CLOUD_LOCATION: us-east5
       GOOGLE_CLOUD_PROJECT: ocp-mcp-server-team
       TASK_PASS_RATE: "0.8"
+      TOOLSETS: core
     test:
     - chain: openshift-mcp-server-mcpchecker-eval-vertex
     workflow: ipi-aws
@@ -84,12 +88,13 @@ tests:
       ASSERTION_PASS_RATE: "0.8"
       AWS_INSTALL_USE_MINIMAL_PERMISSIONS: "yes"
       EVAL_CONFIG: evals/core-eval-testing/builtin-gemini-flash-latest/eval-core.yaml
-      EVAL_LABEL_SELECTOR: ""
+      EVAL_LABEL_SELECTOR: suite=core
       EVAL_SUITE: core
       GEMINI_USE_VERTEX: "1"
       GOOGLE_CLOUD_LOCATION: global
       GOOGLE_CLOUD_PROJECT: ocp-mcp-server-team
       TASK_PASS_RATE: "0.8"
+      TOOLSETS: core
     test:
     - chain: openshift-mcp-server-mcpchecker-eval-vertex
     workflow: ipi-aws
@@ -102,12 +107,13 @@ tests:
       ASSERTION_PASS_RATE: "0.8"
       AWS_INSTALL_USE_MINIMAL_PERMISSIONS: "yes"
       EVAL_CONFIG: evals/core-eval-testing/builtin-gemini-flash-previous/eval-core.yaml
-      EVAL_LABEL_SELECTOR: ""
+      EVAL_LABEL_SELECTOR: suite=core
       EVAL_SUITE: core
       GEMINI_USE_VERTEX: "1"
       GOOGLE_CLOUD_LOCATION: global
       GOOGLE_CLOUD_PROJECT: ocp-mcp-server-team
       TASK_PASS_RATE: "0.8"
+      TOOLSETS: core
     test:
     - chain: openshift-mcp-server-mcpchecker-eval-vertex
     workflow: ipi-aws
@@ -120,12 +126,13 @@ tests:
       ASSERTION_PASS_RATE: "0.8"
       AWS_INSTALL_USE_MINIMAL_PERMISSIONS: "yes"
       EVAL_CONFIG: evals/core-eval-testing/builtin-gemini-pro-preview-latest/eval-core.yaml
-      EVAL_LABEL_SELECTOR: ""
+      EVAL_LABEL_SELECTOR: suite=core
       EVAL_SUITE: core
       GEMINI_USE_VERTEX: "1"
       GOOGLE_CLOUD_LOCATION: global
       GOOGLE_CLOUD_PROJECT: ocp-mcp-server-team
       TASK_PASS_RATE: "0.8"
+      TOOLSETS: core
     test:
     - chain: openshift-mcp-server-mcpchecker-eval-vertex
     workflow: ipi-aws
